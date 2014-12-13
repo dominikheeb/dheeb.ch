@@ -33,7 +33,7 @@ namespace DHeebWebsite
                 "~/Scripts/Chart.js",
                 "~/Scripts/sammy-latest.min.js"
                 ));
-            bundles.Add(new LessBundle("~/Content/less").Include("~/Content/Site.less"));
+            bundles.Add(new LessBundle("~/Content/less").Include("~/Content/site.less"));
             bundles.Add(new LessBundle("~/Content/lessHomePage").Include("~/Content/homePage.less"));
             bundles.Add(new LessBundle("~/Content/lessDevPage").Include("~/Content/devPage.less"));
             bundles.Add(new LessBundle("~/Content/lessPhotoPage").Include("~/Content/photoPage.less"));
