@@ -1,0 +1,55 @@
+﻿<script type="text/javascript">
+    $(document).ready(function () {
+
+        var ctx = $("#myChart").get(0).getContext("2d");
+        var ctx2 = $("#myChart2").get(0).getContext("2d");
+        // This will get the first returned node in the jQuery collection.
+
+        var data = [
+            {
+                value: 80,
+                color: "#3497da"
+            },
+            {
+                value: 20,
+                color: "#85C3EC"
+            }
+        ];
+
+        var myChart = new Chart(ctx).Doughnut(data, {
+            segmentShowStroke: true,
+            segmentStrokeColor: "#fff",
+            segmentStrokeWidth: 3,
+            percentageInnerCutout: 50,
+            animationSteps: 100,
+            animationEasing: "easeOutBounce",
+            animateRotate: true,
+            animateScale: false,
+            showTooltips:false
+        });
+
+        new Chart(ctx2).Doughnut(data, {
+            segmentShowStroke: true,
+            segmentStrokeColor: "#fff",
+            segmentStrokeWidth: 3,
+            percentageInnerCutout: 50,
+            animationSteps: 100,
+            animationEasing: "easeOutBounce",
+            animateRotate: true,
+            animateScale: false,
+            showTooltips: false
+        });
+    });
+</script>
+<div class="container">
+    <div class="skill col-xs-6 col-sm-3 col-md-1">
+        <canvas id="myChart" width="50" height="50"></canvas>
+        <p>C#.Net</p>
+    </div>
+    <div class="skill col-xs-6 col-sm-3 col-md-1">
+        <canvas id="myChart2" width="50" height="50"></canvas>
+        <p>Java</p>
+    </div>
+</div>
+
+@Styles.Render("~/Content/lessDevPage")
