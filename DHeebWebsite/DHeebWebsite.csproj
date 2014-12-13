@@ -142,7 +142,7 @@
     <Content Include="Content\homePage.less" />
     <Content Include="Content\devPage.less" />
     <Content Include="Content\photoPage.less" />
-    <None Include="Content\site.less" />
+    <Content Include="Content\site.less" />
     <Content Include="js\routing\routing.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
