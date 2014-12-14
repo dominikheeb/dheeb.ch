@@ -18,8 +18,7 @@ namespace DHeebWebsite.Controllers
         [HttpPost]
         public PartialViewResult DevPage()
         {
-            string conStr = ConfigurationManager.ConnectionStrings["FlickrNet"].ConnectionString;
-            return PartialView((object)conStr);
+            return PartialView();
         }
 
         [HttpPost]
