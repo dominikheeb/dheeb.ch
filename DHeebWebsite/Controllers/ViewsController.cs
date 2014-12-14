@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -17,7 +18,8 @@ namespace DHeebWebsite.Controllers
         [HttpPost]
         public PartialViewResult DevPage()
         {
-            return PartialView();
+            string conStr = ConfigurationManager.ConnectionStrings["FlickrNet"].ConnectionString;
+            return PartialView((object)conStr);
         }
 
         [HttpPost]
