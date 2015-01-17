@@ -116,26 +116,36 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DataController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ViewsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\PhotoCollectionModel.cs" />
+    <Compile Include="Models\PhotoModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\img\icons.png" />
+    <Content Include="Content\img\icons.svg" />
+    <Content Include="Content\img\loader.gif" />
+    <Content Include="Content\justifiedGallery\justifiedGallery.min.css" />
+    <Content Include="Content\justifiedGallery\swipebox.min.css" />
     <Content Include="Content\bootswatchPaper\bootstrap.css" />
     <Content Include="Content\bootswatchPaper\bootstrap.min.css" />
     <Content Include="Content\defaultTemplate\bootstrap.css" />
     <Content Include="Content\defaultTemplate\bootstrap.min.css" />
-    <Content Include="Content\images\LogoEntwurf2.png" />
-    <Content Include="Content\images\PhotoScan.jpg" />
+    <Content Include="Content\img\LogoEntwurf2.png" />
+    <Content Include="Content\img\PhotoScan.jpg" />
+    <Content Include="Content\loadingBars\devLoading.GIF" />
+    <Content Include="Content\loadingBars\homeLoading.GIF" />
+    <Content Include="Content\loadingBars\photoLoading.GIF" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -150,14 +160,19 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\Chart.js" />
     <Content Include="Scripts\Chart.min.js" />
+    <Content Include="Scripts\doT.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery.justifiedGallery.min.js" />
+    <Content Include="Scripts\jquery.swipebox.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\sammy-latest.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -173,8 +188,14 @@
     <Content Include="Views\Views\Index.cshtml" />
     <Content Include="Views\Views\DevPage.cshtml" />
     <Content Include="Views\Views\PhtPage.cshtml" />
+    <Content Include="Views\Data\dotPhotoCollection.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DHeebWebsite.BusinessLayer\DHeebWebsite.BusinessLayer.csproj">
+      <Project>{196f09b5-1e6a-45ad-9ed1-37afbbb85694}</Project>
+      <Name>DHeebWebsite.BusinessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />

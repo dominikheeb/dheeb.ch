@@ -9,6 +9,10 @@
         this.get('#/pht', function () {
             loadInsideContent('Views/PhtPage');
         });
+        this.get('#/Content/:var', function () {
+            var param = this.params['var'];
+            this.redirect('', param);
+        });
     });
     $(function () {
         app.run('#/');

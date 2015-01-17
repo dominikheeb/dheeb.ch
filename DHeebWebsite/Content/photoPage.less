@@ -1,8 +1,13 @@
 ﻿@import "lessDefinitions/Defs.less";
 
+@loader: "/Content/loadingBars/photoLoading.gif";
 .actualPageColor{
     color: @photoColor;
 }
 .actualPageColorBorder{
     border-color: @photoColor;
+}
+
+.loader{
+    background-image: url("@{loader}");
 }

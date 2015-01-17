@@ -1,5 +1,7 @@
 ﻿@import "lessDefinitions/Defs.less";
 
+@loader: "/Content/loadingBars/devLoading.gif";
+
 .actualPageColor{
     color: @devColor;
 }
@@ -7,3 +9,8 @@
 .actualPageColorBorder{
     border-color: @devColor;
 }
+
+.loader{
+    background-image: url("@{loader}");
+}
+

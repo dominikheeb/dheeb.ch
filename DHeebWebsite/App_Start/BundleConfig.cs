@@ -19,6 +19,10 @@ namespace DHeebWebsite
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
+            bundles.Add(new ScriptBundle("~/Content/pluginCSS").Include(
+                        "~/Content/justifiedGallery/justifiedGallery.min.css",
+                        "~/Content/justifiedGallery/swipebox.min.css"
+                ));
 
             bundles.Add(new StyleBundle("~/Content/defaultTemplate").Include(
                       "~/Content/defaultTemplate/bootstrap.css"
@@ -31,7 +35,10 @@ namespace DHeebWebsite
                 ));
             bundles.Add(new ScriptBundle("~/bundles/scripts").Include(
                 "~/Scripts/Chart.js",
-                "~/Scripts/sammy-latest.min.js"
+                "~/Scripts/sammy-latest.min.js",
+                "~/Scripts/doT.min.js",
+                "~/Scripts/jquery.justifiedGallery.min.js",
+                "~/Scripts/jquery.swipebox.min.js"
                 ));
             bundles.Add(new LessBundle("~/Content/less").Include("~/Content/site.less"));
             bundles.Add(new LessBundle("~/Content/lessHomePage").Include("~/Content/homePage.less"));
