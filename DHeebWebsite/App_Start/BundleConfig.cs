@@ -19,7 +19,7 @@ namespace DHeebWebsite
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
-            bundles.Add(new ScriptBundle("~/Content/pluginCSS").Include(
+            bundles.Add(new StyleBundle("~/Content/pluginCSS").Include(
                         "~/Content/justifiedGallery/justifiedGallery.min.css",
                         "~/Content/justifiedGallery/swipebox.min.css"
                 ));
