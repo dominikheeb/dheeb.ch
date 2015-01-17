@@ -153,10 +153,10 @@
     <Content Include="Content\homePage.less" />
     <Content Include="Content\devPage.less" />
     <Content Include="Content\photoPage.less" />
-    <Content Include="Content\site.less" />
     <Content Include="js\routing\routing.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\site.less" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\Chart.js" />
     <Content Include="Scripts\Chart.min.js" />
