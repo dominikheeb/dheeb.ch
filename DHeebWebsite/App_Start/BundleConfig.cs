@@ -21,7 +21,7 @@ namespace DHeebWebsite
                       "~/Scripts/respond.js"));
             bundles.Add(new StyleBundle("~/Content/pluginCSS").Include(
                         "~/Content/justifiedGallery/justifiedGallery.min.css",
-                        "~/Content/justifiedGallery/swipebox.min.css"
+                        "~/Content/swipebox/css/swipebox.min.css"
                 ));
 
             bundles.Add(new StyleBundle("~/Content/defaultTemplate").Include(
@@ -38,7 +38,7 @@ namespace DHeebWebsite
                 "~/Scripts/sammy-latest.min.js",
                 "~/Scripts/doT.min.js",
                 "~/Scripts/jquery.justifiedGallery.min.js",
-                "~/Scripts/jquery.swipebox.min.js"
+                "~/Content/swipebox/js/jquery.swipebox.min.js"
                 ));
             bundles.Add(new LessBundle("~/Content/less").Include("~/Content/site.less"));
             bundles.Add(new LessBundle("~/Content/lessHomePage").Include("~/Content/homePage.less"));

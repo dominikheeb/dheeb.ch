@@ -132,11 +132,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\img\icons.png" />
-    <Content Include="Content\img\icons.svg" />
+    <Content Include="Content\swipebox\img\icons.png" />
+    <Content Include="Content\swipebox\img\icons.svg" />
     <Content Include="Content\img\loader.gif" />
     <Content Include="Content\justifiedGallery\justifiedGallery.min.css" />
-    <Content Include="Content\justifiedGallery\swipebox.min.css" />
+    <Content Include="Content\swipebox\css\swipebox.min.css" />
     <Content Include="Content\bootswatchPaper\bootstrap.css" />
     <Content Include="Content\bootswatchPaper\bootstrap.min.css" />
     <Content Include="Content\defaultTemplate\bootstrap.css" />
@@ -164,7 +164,7 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery.justifiedGallery.min.js" />
-    <Content Include="Scripts\jquery.swipebox.min.js" />
+    <Content Include="Content\swipebox\js\jquery.swipebox.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
