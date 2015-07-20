@@ -13,7 +13,8 @@ namespace PersonalCVPageDheeb
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/js/jquery-1.11.2.min.js",
                         "~/Scripts/js/jquery.inview.min.js",
-                        "~/Scripts/js/jquery.knob.min.js"));
+                        "~/Scripts/js/jquery.knob.min.js",
+                        "~/Scripts/js/jquery-ui.min.js"));
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                         "~/Scripts/js/bootstrap.min.js"));
             bundles.Add(new ScriptBundle("~/bundles/javascripts").Include(

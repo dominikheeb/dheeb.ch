@@ -217,7 +217,7 @@
 			$('.sections-wrapper').css('height', $('.sections-wrapper section.active').outerHeight());
 			disableButtons(url);
 		}
-		horizontalSections();
+		/*horizontalSections();
 		$(window).on('resize', function() {
 			horizontalSections();
 		});
@@ -238,7 +238,7 @@
 		});
 		$('.available').on('click', function() {
 			slide('mainNav', $(this));
-		});
+		});*/
 		//$('a.forward, .section-nav a.backward, .main-nav a, .responsive-nav a, .available').smoothScroll();
 
 		/*==========  Testimonial Slider  ==========*/

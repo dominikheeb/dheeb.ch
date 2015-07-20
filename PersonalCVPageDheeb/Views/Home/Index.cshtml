@@ -2,34 +2,62 @@
     <script type="text/javascript">
     $(document).ready(function () {
         var app = $.sammy(function () {
-            this.element_selector = '#contentContainer';
+            this.swap = function (content, callback) {
+                var context = this;
+                context.$element().hide('drop', { direction: 'left' },1000, function () {
+                    context.$element().html(content);
+                    context.$element().show('drop', { direction: 'right' },1000, function () {
+                        if (callback) {
+                            callback.apply();
+                        }
+                    }); 
+                });
+            };
+
+            this.element_selector = '#contentBody';
             this.get('#/', function (context) {
                 context.load("@Url.Action("Home","Home")", { cache: false }).swap();
+                SetActiveLink(this.path);
             });
             this.get('#/Person/About', function (context) {
                 context.load("@Url.Action("AboutMe", "Home")", { cache: false }).swap();
+                SetActiveLink(this.path);
             });
             this.get('#/Development/Skills', function (context) {
                 context.load("@Url.Action("Skills","Development")", { cache: false }).swap();
+                SetActiveLink(this.path);
             });
             this.get('#/Development/Experience', function (context) {
                 context.load("@Url.Action("Experience", "Development")", { cache: false }).swap();
+                SetActiveLink(this.path);
             });
             this.get('#/Development/Education', function (context) {
                 context.load("@Url.Action("Education", "Development")", { cache: false }).swap();
+                SetActiveLink(this.path);
             });
             this.get('#/Photo/Portfolio', function (context) {
                 context.load("@Url.Action("Portfolio", "Photo")", { cache: false }).swap();
+                SetActiveLink(this.path);
             });
             this.get('#/Person/Blog', function (context) {
                 context.load("@Url.Action("Blog","Home")", { cache: false }).swap();
+                SetActiveLink(this.path);
             });
             this.get('#/Person/Contact', function (context) {
                 context.load("@Url.Action("Contact","Home")", { cache: false }).swap();
+                SetActiveLink(this.path);
             });
         });
 
         app.run("#/");
     });
+
+    function SetActiveLink(name) {
+        var ul = $('.main-nav ul');
+
+        ul.children().removeClass('active')
+        
+        ul.find('a[href="' + name.substr(1) + '"]').parent().addClass('active')
+    }
     </script>
 }
