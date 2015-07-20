@@ -17,7 +17,12 @@ namespace PersonalCVPageDheeb
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                         "~/Scripts/js/bootstrap.min.js"));
             bundles.Add(new ScriptBundle("~/bundles/javascripts").Include(
-                        "~/Scripts/js/imagesloaded.pkgd.min.js","~/Scripts/js/isotope.pkgd.min.js","~/Scripts/js/owl.carousel.min.js","~/Scripts/js/scripts.js","~/Scripts/js/smoothscroll.js"));
+                        "~/Scripts/js/imagesloaded.pkgd.min.js",
+                        "~/Scripts/js/isotope.pkgd.min.js",
+                        "~/Scripts/js/owl.carousel.min.js",
+                        "~/Scripts/js/scripts.js",
+                        "~/Scripts/js/sammy-latest.min.js",
+                        "~/Scripts/js/smoothscroll.js"));
         }
     }
 }

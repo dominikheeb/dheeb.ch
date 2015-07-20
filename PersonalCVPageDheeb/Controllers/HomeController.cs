@@ -13,5 +13,23 @@ namespace PersonalCVPageDheeb.Controllers
         {
             return View();
         }
+        public PartialViewResult Home()
+        {
+            return PartialView();
+        }
+        public PartialViewResult AboutMe()
+        {
+            return PartialView();
+        }
+
+        public PartialViewResult Contact()
+        {
+            return PartialView();
+        }
+
+        public PartialViewResult Blog()
+        {
+            return PartialView();
+        }
     }
 }

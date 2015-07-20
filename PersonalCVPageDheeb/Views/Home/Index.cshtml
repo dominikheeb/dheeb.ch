@@ -1,7 +1,35 @@
-﻿
-@{
-    ViewBag.Title = "Index";
+﻿@section scripts{
+    <script type="text/javascript">
+    $(document).ready(function () {
+        var app = $.sammy(function () {
+            this.element_selector = '#contentContainer';
+            this.get('#/', function (context) {
+                context.load("@Url.Action("Home","Home")", { cache: false }).swap();
+            });
+            this.get('#/Person/About', function (context) {
+                context.load("@Url.Action("AboutMe", "Home")", { cache: false }).swap();
+            });
+            this.get('#/Development/Skills', function (context) {
+                context.load("@Url.Action("Skills","Development")", { cache: false }).swap();
+            });
+            this.get('#/Development/Experience', function (context) {
+                context.load("@Url.Action("Experience", "Development")", { cache: false }).swap();
+            });
+            this.get('#/Development/Education', function (context) {
+                context.load("@Url.Action("Education", "Development")", { cache: false }).swap();
+            });
+            this.get('#/Photo/Portfolio', function (context) {
+                context.load("@Url.Action("Portfolio", "Photo")", { cache: false }).swap();
+            });
+            this.get('#/Person/Blog', function (context) {
+                context.load("@Url.Action("Blog","Home")", { cache: false }).swap();
+            });
+            this.get('#/Person/Contact', function (context) {
+                context.load("@Url.Action("Contact","Home")", { cache: false }).swap();
+            });
+        });
+
+        app.run("#/");
+    });
+    </script>
 }
-
-<h2>Index</h2>
-

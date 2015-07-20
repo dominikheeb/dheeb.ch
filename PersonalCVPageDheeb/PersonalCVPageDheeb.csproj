@@ -161,15 +161,20 @@
     <Content Include="Scripts\js\jquery.inview.min.js" />
     <Content Include="Scripts\js\jquery.knob.min.js" />
     <Content Include="Scripts\js\owl.carousel.min.js" />
+    <Content Include="Scripts\js\sammy-latest.min.js" />
     <Content Include="Scripts\js\scripts.js" />
     <Content Include="Scripts\js\smoothscroll.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\DevelopmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PhotoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -447,6 +452,14 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Views\Home\Home.cshtml" />
+    <Content Include="Views\Home\AboutMe.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Blog.cshtml" />
+    <Content Include="Views\Photo\Portfolio.cshtml" />
+    <Content Include="Views\Development\Education.cshtml" />
+    <Content Include="Views\Development\Skills.cshtml" />
+    <Content Include="Views\Development\Experience.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
