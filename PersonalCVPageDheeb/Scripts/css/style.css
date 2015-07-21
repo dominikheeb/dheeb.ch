@@ -913,7 +913,6 @@ input:not([type=submit]):not([type=file]):focus, select:focus, textarea:focus {
     padding: 72px 12px;
 }
 .content-wrapper > #contentBody {
-	width: 1600px;
 	height: auto;
 	float: left;
 	
