@@ -24,6 +24,11 @@ namespace PersonalCVPageDheeb
                         "~/Scripts/js/scripts.js",
                         "~/Scripts/js/sammy-latest.min.js",
                         "~/Scripts/js/smoothscroll.js"));
+            bundles.Add(new ScriptBundle("~/bundles/terrificjs").Include(
+                        "~/Scripts/js/terrific-2.1.0.min.js",
+                        "~/Scripts/js/terifficInit.js",
+                        "~/Scripts/js/TerrificModules/*.js"
+                ));
         }
     }
 }

@@ -165,6 +165,9 @@
     <Content Include="Scripts\js\sammy-latest.min.js" />
     <Content Include="Scripts\js\scripts.js" />
     <Content Include="Scripts\js\smoothscroll.js" />
+    <Content Include="Scripts\js\terifficInit.js" />
+    <Content Include="Scripts\js\terrific-2.1.0.min.js" />
+    <Content Include="Scripts\js\TerrificModules\Tc.Module.ResponsiveNav.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
