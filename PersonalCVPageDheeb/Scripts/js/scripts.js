@@ -71,6 +71,11 @@
 			$('body').addClass('no-scroll');
 			$('.responsive-menu').addClass('open');
 		});
+		$('.responsive-nav a').on('click', function (event) {
+		    
+		    $('body').removeClass('no-scroll');
+		    $('.responsive-menu').removeClass('open');
+		});
 		$('.responsive-menu-close').on('click', function(event) {
 			event.preventDefault();
 			$('body').removeClass('no-scroll');

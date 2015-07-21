@@ -910,11 +910,12 @@ input:not([type=submit]):not([type=file]):focus, select:focus, textarea:focus {
 	-o-transition: .5s;
 	-ms-transition: .5s;
 	transition: .5s;
-    padding: 72px 12px;
+    padding: 72px 10%;
 }
 .content-wrapper > #contentBody {
 	height: auto;
 	float: left;
+    width:100%;
 	
 }
 .sections-wrapper > section.no-padding-bottom {
