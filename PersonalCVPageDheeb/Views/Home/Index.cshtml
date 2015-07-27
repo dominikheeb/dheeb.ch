@@ -10,7 +10,7 @@
                         if (callback) {
                             callback.apply();
                         }
-                    }); 
+                    });
                 });
             };
 
@@ -47,6 +47,20 @@
                 context.load("@Url.Action("Contact","Home")", { cache: false }).swap();
                 SetActiveLink(this.path);
             });
+
+            this.bind('run', function () {
+                this.render("@Url.Action("ContactSidebar","Widgets")").replace($("#contactSidebar")).then(function () {
+                    (function () {
+                        //$.application.sandbox.addModules($("#contactSidebar"));
+                        var $page = $('body');
+                        var application = new Tc.Application($page);
+                        application.registerModules($("#contactSidebar"));
+                        application.start();
+                    })(Tc.$)
+                });
+                //registerTcModules($(".mod-contactSidebar"));
+                
+            });
         });
 
         app.run("#/");
@@ -56,7 +70,7 @@
         var ul = $('.main-nav ul');
 
         ul.children().removeClass('active')
-        
+
         ul.find('a[href="' + name.substr(1) + '"]').parent().addClass('active')
     }
     </script>

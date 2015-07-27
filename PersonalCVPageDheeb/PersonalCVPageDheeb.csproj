@@ -167,6 +167,7 @@
     <Content Include="Scripts\js\smoothscroll.js" />
     <Content Include="Scripts\js\terifficInit.js" />
     <Content Include="Scripts\js\terrific-2.1.0.min.js" />
+    <Content Include="Scripts\js\TerrificModules\Tc.Module.ContactSidebar.js" />
     <Content Include="Scripts\js\TerrificModules\Tc.Module.ResponsiveNav.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -179,6 +180,7 @@
     <Compile Include="Controllers\DevelopmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PhotoController.cs" />
+    <Compile Include="Controllers\WidgetsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -464,6 +466,7 @@
     <Content Include="Views\Development\Education.cshtml" />
     <Content Include="Views\Development\Skills.cshtml" />
     <Content Include="Views\Development\Experience.cshtml" />
+    <Content Include="Views\Widgets\ContactSidebar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

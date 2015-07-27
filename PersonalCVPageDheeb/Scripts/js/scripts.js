@@ -72,27 +72,7 @@
 			event.preventDefault();
 			$('.popup').fadeToggle(250);
 		});
-		$('.slide-out-share').on('click', function(event) {
-			event.preventDefault();
-			$('.slide-out-popup').fadeToggle(250);
-		});
-
-		/*==========  Slide Out  ==========*/
-		$('.header-action-button').on('click', function(event) {
-			event.preventDefault();
-			$('.slide-out-overlay').fadeIn(250);
-			$('.slide-out').addClass('open');
-		});
-		$('.slide-out-close').on('click', function(event) {
-			event.preventDefault();
-			$('.slide-out-overlay').fadeOut(250);
-			$('.slide-out').removeClass('open');
-		});
-		$('.slide-out-overlay').on('click', function(event) {
-			event.preventDefault();
-			$('.slide-out-overlay').fadeOut(250);
-			$('.slide-out').removeClass('open');
-		});
+		
 
 		/*==========  Search  ==========*/
 		function positionSearch() {
