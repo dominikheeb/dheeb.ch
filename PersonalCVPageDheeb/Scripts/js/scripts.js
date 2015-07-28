@@ -94,12 +94,12 @@
 		$(window).on('resize', function() {
 			positionSearch();
 		});
-		$('.open-search').on('click', function(event) {
+		$('body').on('click','.open-search', function(event) {
 			event.preventDefault();
 			$('.search-overlay').addClass('scale');
 			$('.search').addClass('open');
 		});
-		$('.search-close').on('click', function(event) {
+		$('body').on('click', '.search-close', function (event) {
 			event.preventDefault();
 			$('.search-overlay').removeClass('scale');
 			$('.search').removeClass('open');
